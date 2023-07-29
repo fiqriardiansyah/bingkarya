@@ -5,7 +5,7 @@ const nextConfig = {
         appDir: true,
     },
     images: {
-        domains: ["localhost", "https://bingkarya.vercel.app/"],
+        domains: ["localhost", "https://bingkarya.vercel.app/", "firebasestorage.googleapis.com"],
     },
     async redirects() {
         return [
