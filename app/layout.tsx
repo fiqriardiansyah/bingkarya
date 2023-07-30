@@ -20,6 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <html lang="id">
                 <head>
                     <title>Bingkay karya</title>
+                    <meta name="dicoding:email" content="fiqriardian92@gmail.com" />
                     <meta name="description" content="Cari karya apapun disini!!" />
                     <link rel="icon" type="image" href="/icon.png"></link>
                     <link rel="preconnect" href="https://fonts.googleapis.com" />

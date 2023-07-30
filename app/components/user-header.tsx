@@ -24,13 +24,13 @@ const UserHeader = ({ uid }: { uid?: string }) => {
         <div className="p-3 flex items-center gap-4 group absolute top-0 left-0 z-20">
             <StateRender data={getUserQuery.data} isLoading={getUserQuery.isLoading} isError={getUserQuery.isError}>
                 <StateRender.Data>
-                    {getUserQuery.data?.photoURL || getUserQuery.data?.profileImg ? (
+                    {getUserQuery.data?.profileImg ? (
                         <div className="w-[50px] h-[50px] relative rounded-full opacity-0 group-hover:opacity-100 duration-150">
                             <Image
                                 quality={40}
                                 fill
                                 className="object-cover  "
-                                src={getUserQuery.data?.photoURL || getUserQuery.data?.profileImg}
+                                src={getUserQuery.data?.profileImg}
                                 alt={getUserQuery.data?.username || getUserQuery.data?.displayName || ""}
                             />
                         </div>

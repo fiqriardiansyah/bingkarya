@@ -49,7 +49,7 @@ function ChatItem({ data, onClick }: Props) {
     return (
         <button onClick={() => onClick(data)} type="button" className={className}>
             {!userQuery.data?.profileImg ? (
-                <div className="w-full h-full bg-gray-200 flex items-center justify-center rounded-full">
+                <div className="w-[40px] h-[40px] overflow-hidden bg-gray-200 flex items-center justify-center rounded-full">
                     <FaUserAlt className="text-2xl text-gray-400" />
                 </div>
             ) : (
