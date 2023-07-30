@@ -35,14 +35,14 @@ const OwnerContent = ({ uid }: { uid: any }) => {
             <div className="p-3 flex items-center gap-4 bg-white container mx-auto px-28 hover:bg-slate-50">
                 <StateRender data={getUserQuery.data} isLoading={getUserQuery.isLoading} isError={getUserQuery.isError}>
                     <StateRender.Data>
-                        {getUserQuery.data?.photoURL || getUserQuery.data?.profileImg ? (
+                        {getUserQuery.data?.profileImg ? (
                             <div className="w-[50px] h-[50px] relative rounded-full">
                                 <Image
                                     quality={40}
                                     fill
                                     className="object-cover  "
-                                    src={getUserQuery.data?.photoURL || getUserQuery.data?.profileImg}
-                                    alt={getUserQuery.data?.username || getUserQuery.data?.displayName || ""}
+                                    src={getUserQuery.data?.profileImg}
+                                    alt={getUserQuery.data?.username}
                                 />
                             </div>
                         ) : (
